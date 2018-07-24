@@ -28,7 +28,6 @@ class TopSection extends Component {
         );
       }
     handleClick = () => {
-      var count = 5
       this.setState({APIresult:''})
       let config = { hashtag: this.state.hashtag,
       results: this.state.results,
