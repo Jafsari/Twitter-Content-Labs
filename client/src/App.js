@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Body from './components/body.jsx'
 import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
 import twitter from './assets/icons/twitter-dood.jpeg'
 
 class App extends Component {

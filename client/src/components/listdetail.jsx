@@ -4,6 +4,7 @@ import '../styles/listDetail.css'
 class ListDetail extends Component {
   constructor(props){
     super(props)
+    //Selected State starts out as Favorited, and changes as client interacts with drop-down menu.
     this.state ={
         type:'Favorited',
     }
@@ -14,6 +15,8 @@ handleSelect = (e) => {
         type: e.target.value
       }
     )
+    // this.props.data is immutable, so make it immutable by assigning into a new variable
+    // sort the data 
     let data = this.props.data
     if (this.state.type === 'Retweets'){
       data = data.sort((a,b) => {
@@ -28,6 +31,7 @@ handleSelect = (e) => {
   }
   render() {
       let data = this.props.data
+      // Map through the mutable data and create a new table row with each different element from the response
     return (
         <div className='list'>
         Sort By:

@@ -8,6 +8,7 @@ class List extends Component {
   }
   render() {
     let APIresult = this.props.data || false
+    // Check to see if APIresult if truthy, if so render ListDetail Component, else don't render anything on the page.
     return (
       <div>
         {APIresult ? (

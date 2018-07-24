@@ -6,6 +6,7 @@ import List from './List.jsx'
 class TopSection extends Component {
     constructor(props){
         super(props)
+        //Different parameters for the server to use for Twitter's API request.
         this.state ={
             hashtag:'',
             results: '',
@@ -13,7 +14,7 @@ class TopSection extends Component {
             APIresult:''
         }
     }
-
+    //Control Form
     handleChange = (e) => {
         this.setState({
           [e.target.name]: e.target.value
@@ -34,6 +35,8 @@ class TopSection extends Component {
       results: this.state.results,
       type: this.state.type
     }
+    //Request to Server
+    //Include state within config
       axios.post('http://localhost:1100/api/twitter',config).then((response) => {
         console.log('hi')
         this.setState({APIresult:response.data.statuses})
