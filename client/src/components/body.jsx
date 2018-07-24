@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/topSection.css';
+import '../styles/body.css';
 import axios from 'axios';
 import List from './List.jsx'
 
