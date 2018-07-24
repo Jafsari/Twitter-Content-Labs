@@ -1,8 +1,8 @@
 .list{
     position:relative;
     top:30px;
-    font-style:italic;
-    font-family:cursive;
+    
+    font-family: 'Montserrat', sans-serif;
 }
 
 .card{
@@ -15,8 +15,8 @@
 
 .tweetTitle{
     margin: 20px 0;
-    font-style:italic;
-    font-family:cursive;
+    
+    font-family: 'Montserrat', sans-serif;
 }
 
 .label{

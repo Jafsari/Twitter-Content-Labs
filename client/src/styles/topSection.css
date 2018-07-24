@@ -31,13 +31,14 @@
 
 .input {
     padding:5px;
-    padding-right:30px;
+    padding-right:35px;
     margin-bottom:10px;
+    overflow:auto;
     border:none;
     border-bottom:1px solid #757575;
     font-size:18px;
-    font-style:italic;
-    font-family:cursive;
+    
+    font-family: Abel;
 }
 
   .input:focus 		{ 
@@ -78,6 +79,6 @@
 
 
 .title{
-    font-style:italic;
-    font-family:cursive;
+    
+    font-family: 'Montserrat', sans-serif;
 }
