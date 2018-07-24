@@ -26,6 +26,10 @@
     -ms-animation:pop-in 1.5s; 
 }
 
+.tdResponsive{
+    overflow:hidden;
+}
+
 #tweetTable{
     border-collapse: collapse;
     margin: 0;
@@ -35,8 +39,7 @@
     transition: all .2s ease-in-out;
     -webkit-animation:pop-in 1.5s;
     -moz-animation:pop-in 1.5s;
-    -ms-animation:pop-in 1.5s; 
-
+    -ms-animation:pop-in 1.5s;
 }
 
 #tweetTable tr:hover 
@@ -84,6 +87,8 @@ background-color: #ddd;
   color: white;
 }
 
+
+
 @-webkit-keyframes pop-in {
     0% { opacity: 0; -webkit-transform: scale(0.5); }
     100% { opacity: 1; -webkit-transform: scale(1); }
@@ -114,5 +119,8 @@ background-color: #ddd;
     table tr{
         overflow:hidden;
     }
+      
 
 }
+
+

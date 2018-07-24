@@ -48,17 +48,17 @@ handleSelect = (e) => {
         </div>
 <div className='responsive'>
 <table id ='tweetTable' >
-<th> Created At </th>
-<th> Tweet </th>
-<th> Favorite </th>
-<th> Retweet </th>
+<th className='tdResponsive' > Created At </th>
+<th className='tdResponsive' > Tweet </th>
+<th className='tdResponsive' > Favorite </th>
+<th className='tdResponsive' > Retweet </th>
         {data.map((tweet,index) => {
            return  (
             <tr key ={index} className='tweetInfo'>
-            <td className='tweetCreate'>{tweet.created_at} </td>
-            <td>{tweet.text} </td>
-            <td>{tweet.favorite_count}</td>
-            <td>{tweet.retweet_count}</td>
+            <td className='tdResponsive'>{tweet.created_at} </td>
+            <td className='tdResponsive'>{tweet.text} </td>
+            <td className='tdResponsive'>{tweet.favorite_count}</td>
+            <td className='tdResponsive'>{tweet.retweet_count}</td>
             </tr>
            )
         })}
