@@ -27,7 +27,8 @@ class TopSection extends Component {
           }
         );
       }
-    handleClick = () => {
+    handleClick = (e) => {
+      e.preventDefault();
       this.setState({APIresult:''})
       let config = { hashtag: this.state.hashtag,
       results: this.state.results,
